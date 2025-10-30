@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Día Mundial de la Ciencia para la Paz y el Desarrollo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden>SC</div>
+        <div>
+          <h1>Día Mundial de la Ciencia para la Paz y el Desarrollo</h1>
+          <p class="lead">Composición digital. Aplica reglas de diseño: balance, unidad, legibilidad, contraste, nitidez y jerarquía.</p>
+        </div>
+      </div>
+      <div>
+        <button class="btn" id="toggleDark">Modo claro</button>
+        <button class="btn primary" id="openModal">Ver resumen</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="text">
+          <span class="kicker">Descripción</span>
+          <div class="subtitle">Qué es y por qué importa</div>
+
+          <div class="grid">
+            <article class="card" id="desc">
+              <h3>Descripción</h3>
+              <p>El Día Mundial de la Ciencia para la Paz y el Desarrollo promueve la ciencia como fuerza para el bienestar humano, la paz y el progreso sostenible. Celebra la investigación abierta, la cooperación internacional y la aplicación ética de la tecnología para resolver problemas globales.</p>
+            </article>
+
+            <section class="card" id="concienciacion">
+              <h3>Concienciación social</h3>
+              <p>Difundir conocimiento científico accesible reduce la desinformación. Educaciones públicas, ferias, charlas y contenidos digitales acercan la ciencia a comunidades y fortalecen decisiones públicas basadas en evidencia.</p>
+            </section>
+
+            <article class="card" id="impacto">
+              <h3>Impacto</h3>
+              <p>La ciencia impulsa la salud, la seguridad alimentaria, energías limpias y resiliencia climática. Su integración responsable genera empleo cualificado y construye sociedades menos vulnerables a crisis.</p>
+            </article>
+
+            <aside class="card" style="min-height:unset;">
+              <h3>¿Cómo participar?</h3>
+              <p>Organiza o asiste a exposiciones, conferencias escolares, seminarios en línea y talleres. Comparte proyectos científicos locales. Exige políticas públicas basadas en evidencia.</p>
+            </aside>
+          </div>
+
+          <div style="margin-top:14px;display:flex;gap:10px;align-items:center;">
+            <button class="btn primary" id="share">Descargar PDF</button>
+            <button class="btn" id="focusImpact">Ir a Impacto</button>
+            <div style="margin-left:auto;color:var(--muted);font-size:0.9rem">Balance • Unidad • Legibilidad • Contraste</div>
+          </div>
+        </div>
+      </div>
+
+      <section style="margin-top:18px">
+        <h2 style="font-size:1.05rem;margin-bottom:10px">Eventos destacados</h2>
+        <div class="grid" style="grid-template-columns:repeat(3,1fr);gap:12px">
+          <div class="card">
+            <h3>Feria científica</h3>
+            <p>Proyectos estudiantiles y demostraciones prácticas para público general.</p>
+          </div>
+          <div class="card">
+            <h3>Seminario público</h3>
+            <p>Charlas de investigadores sobre innovación, ética y paz.</p>
+          </div>
+          <div class="card">
+            <h3>Taller comunitario</h3>
+            <p>Talleres para aprender sobre energía renovable y adaptación climática.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <aside>
+      <div class="ribbon">26 de noviembre</div>
+      <div class="stats">
+        <div class="stat"><strong>Meta</strong><span>Visibilizar ciencia ética y responsable</span></div>
+        <div class="stat"><strong>Alcance</strong><span>Escuelas, universidades, ONGs y ciudadanía</span></div>
+      </div>
+
+      <div class="card" style="padding:12px">
+        <h3>Próximos eventos</h3>
+        <div class="events-list">
+          <div class="event"><strong>Feria local</strong><time>26 nov • 10:00</time></div>
+          <div class="event"><strong>Webinar: Ciencia y paz</strong><time>26 nov • 16:00</time></div>
+          <div class="event"><strong>Taller: Energías</strong><time>27 nov • 09:00</time></div>
+        </div>
+      </div>
+    </aside>
+
+    <footer>Diseño orientado a legibilidad y jerarquía. Hecho para presentar en pantalla y proyectores.</footer>
+  </div>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="dialog">
+      <button class="close" id="closeModal">Cerrar ✕</button>
+      <h3>Resumen ejecutivo</h3>
+      <p style="color:var(--muted);margin-top:8px">Este recurso resume por qué el Día Mundial de la Ciencia para la Paz y el Desarrollo es clave. Promueve divulgación, colaboración y políticas basadas en evidencia. Recomendaciones: aumentar ferias locales, integrar cursos de alfabetización científica y financiar proyectos comunitarios de ciencia aplicada.</p>
+      <div style="margin-top:12px;display:flex;gap:8px;justify-content:flex-end">
+        <button class="btn" id="copy">Copiar resumen</button>
+        <button class="btn primary" id="closeModal2">Entendido</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
